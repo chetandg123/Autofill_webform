@@ -17,7 +17,7 @@
   	
 [Steps to Download the chrome driver] 
 Note: Based on chrome browser version need to download chrome driver 
-   https://sites.google.com/a/chromium.org/chromedriver/downloads
+https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 6.In pycharm configure the interpreter as python 3.8
 7.Place the csv file or excel in Excel_Directory
