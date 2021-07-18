@@ -19,8 +19,6 @@ class Auto_form_filling(unittest.TestCase):
         time.sleep(2)
 
 
-
-
     @classmethod
     def tearDownClass(cls):
         cls.driver.close()
