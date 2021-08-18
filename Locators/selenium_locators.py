@@ -1,6 +1,9 @@
 
 class selenium_locators():
 
+    username=""
+    password=""
+    login_btn=""
     Quality="quality_velocity"
     Problem_Origin="problem_origin"
     Event_Type="product"
