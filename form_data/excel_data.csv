@@ -1,0 +1,7 @@
+Quality/Velocity,Problem Origin,Event Type,Product Family,New/Found/Missing,Serial Prefix,Serial Number,Part Number ,ID Area,Course Area,PD Name,Problem Description,Problem Symptom Comment,Status,Priority,Stop time,Event Number
+Quality,Facility,Product ,ASK-773E - OHT,Missed,ASK,103,3195405,QG 4-PDI,ME OHT QG2-OHT Assy QG2,Unable to Adjust (0006000),AUXSTEERG MOTOR SUB ASSY-XYZ,Dimensional issue bearing oversize noticed by Tharani.,Open,Minor,10,
+Quality,Facility,Product ,ASK-773E - OHT,Found,ASK,103,3195406,QG 4-PDI,ME OHT QG2-OHT Assy QG2,Unable to Adjust (0006000),AUXSTEERG MOTOR SUB ASSY-XYZ,Dimensional issue bearing oversize noticed by Tharani.,Open,Major,0,
+Quality,Facility,Product ,ASK-773E - OHT,Found,ASK,103,3195407,QG 4-PDI,ME OHT QG2-OHT Assy QG2,Unable to Adjust (0006000),AUXSTEERG MOTOR SUB ASSY-XYZ,Dimensional issue bearing oversize noticed by Tharani.,Open,Minor,20,
+Quality,Facility,Product ,ASK-773E - OHT,Found,ASK,103,3195408,QG 4-PDI,ME OHT QG2-OHT Assy QG2,Unable to Adjust (0006000),AUXSTEERG MOTOR SUB ASSY-XYZ,Dimensional issue bearing oversize noticed by Tharani.,Open,Minor,60,
+Quality,Facility,Product ,ASK-773E - OHT,Found,ASK,103,3195409,QG 4-PDI,ME OHT QG2-OHT Assy QG2,Unable to Adjust (0006000),AUXSTEERG MOTOR SUB ASSY-XYZ,Dimensional issue bearing oversize noticed by Tharani.,Open,Minor,35,
+,,,,,,,,,,,,,,,,

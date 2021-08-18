@@ -61,6 +61,8 @@ class web_form_auto_fillup():
             time.sleep(4)
             count = count+1
             records= self.driver.find_element_by_id('demo').text
+            details=[]
+            details = [records]
             self.logger.info('***************Record is updated successfully******************')
 
 
