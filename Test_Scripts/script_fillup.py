@@ -154,6 +154,7 @@ class script_for_fillup_webpage():
 
             #logic to clear input csv file once operation is completes
             # print("Deletion of records in existing input csv file")
-            # f = open(form_data, "w+")
+            # f = open(form_data, "r+")
+            # f.truncate(228)
             # print('**********File is cleared***********')
             # f.close()
