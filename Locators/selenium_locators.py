@@ -1,24 +1,32 @@
 
 class selenium_locators():
 
-    username=""
-    password=""
-    login_btn=""
-    Quality="quality_velocity"
-    Problem_Origin="problem_origin"
-    Event_Type="product"
-    Product_Family=""
-    case="new_found_missed"
-    Serial_Prefix=""
-    Serial_Number=""
-    PartNumber="part_number"
-    ID_Area="id_area"
-    CauseArea="cause_area"
-    PD_Name=""
-    Problem_Description=""
+    username="cwsUID"
+    password="cwsPwd"
+    login_btn="submitButton"
+    Quality = "qualityVelocity"
+    Problem_Origin = "eventVO.internExternInd"
+    Event_Type = "eventVO.eventType"
+    Product_Family = 'eventVO.productFamilyCode'
+    new_found = "newFoundMissed"
+    Serial_Prefix = "serialPrefix"
+    Serial_Number = "serialSuffix"
+    PartNumber = "eventVO.partNumber"
+    ID_Area = "eventVO.identifyingAreaId"
+    CauseArea = "causeAreaId"
+    PD_Name = "eventVO.pdId"
+    Problem_Description = "eventVO.problemComments"
+    Problem_Symptom = "eventVO.problemSymText"
+    Status = "eventVO.status"
+    Priority_Description = "prtyId"
+    Stop_Time = "waitTime"
+    Event_Number = "eventVO.eventNumber"
 
-    filename ='/excel_data.csv'
+    filename = '/excel_data.csv'
+    outputfile='/event_records'
 
-    save_submitbtn ="//*[@id='myForm']/div[2]/input"
+    save_submitbtn = "nextEvent"
+
+    supplierCode="supplierCode"
 
 

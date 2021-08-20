@@ -2,6 +2,7 @@ import time
 import unittest
 
 from Test_Scripts.form_fillup import web_form_auto_fillup
+from Test_Scripts.script_fillup import script_for_fillup_webpage
 from reuse_funs import functions
 
 
@@ -18,6 +19,10 @@ class Auto_form_filling(unittest.TestCase):
         method = clas.webform_fields()
         time.sleep(2)
 
+    def test_generate_events(self):
+        method = script_for_fillup_webpage(self.driver)
+        res = method.webpage_contents()
+        time.sleep(3)
 
     @classmethod
     def tearDownClass(cls):

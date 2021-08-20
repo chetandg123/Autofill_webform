@@ -8,6 +8,7 @@ class get_paths():
         cwd = os.path.dirname(__file__)
         ini = os.path.join(cwd,'config.ini')
         return ini
+
     def get_application_url(self):
         self.p = get_paths()
         config = configparser.ConfigParser()

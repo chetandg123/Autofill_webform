@@ -26,3 +26,8 @@ https://sites.google.com/a/chromium.org/chromedriver/downloads
 10. To Run the Test suite -> Test_Scripts/test_suite.py [Right click on mouse and click on run option]
 else other wise run the command in terminal : [python3 -m unittest Test_Scripts/test_suite.py]
 
+[Procedure for connecting console error to logs before execution]
+- Click on Select Run/Debug Configurations and go to edit configurations
+- Click on logs -> click (+) provide log name and path to store the log file , click apply and ok 
+- once execution done go to log file location from local storage and check log file 
+- [note: Console error log file will not shown in pycharm]
