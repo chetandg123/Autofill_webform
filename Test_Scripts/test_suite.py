@@ -1,6 +1,7 @@
 import time
 import unittest
 
+from Test_Scripts.demo_test1 import demo_test1
 from Test_Scripts.form_fillup import web_form_auto_fillup
 from Test_Scripts.script_fillup import script_for_fillup_webpage
 from reuse_funs import functions
@@ -14,6 +15,7 @@ class Auto_form_filling(unittest.TestCase):
         self.driver.maximize_window()
         self.reuse.get_webform_url()
 
+    #Run any one test method for test trails
     def test_fillup_webforms(self):
         clas =web_form_auto_fillup(self.driver)
         method = clas.webform_fields()
@@ -21,6 +23,11 @@ class Auto_form_filling(unittest.TestCase):
 
     def test_generate_events(self):
         method = script_for_fillup_webpage(self.driver)
+        res = method.webpage_contents()
+        time.sleep(3)
+
+    def test_trial_round_3(self):
+        method = demo_test1()
         res = method.webpage_contents()
         time.sleep(3)
 
