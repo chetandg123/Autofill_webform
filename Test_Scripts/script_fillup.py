@@ -50,18 +50,22 @@ class script_for_fillup_webpage():
             self.locator = selenium_locators()
             select = Select(self.driver.find_element_by_id(self.locator.Quality))
             select.select_by_visible_text(str(quality[i]))
+            time.sleep(1)
 
             # Select Problem Origin
             select = Select(self.driver.find_element_by_id(self.locator.Problem_Origin))
             select.select_by_visible_text(problem_origin[i])
+            time.sleep(3)
 
             # Select New/Missed/Found
             select = Select(self.driver.find_element_by_id(self.locator.new_found))
             select.select_by_visible_text(new_found[i])
+            time.sleep(1)
 
             # Select Product Family
             select = Select(self.driver.find_element_by_id(self.locator.Product_Family))
             select.select_by_visible_text(Product_Family[i])
+            time.sleep(1)
 
             # Select serialPrefix
             select = Select(self.driver.find_element_by_id(self.locator.Serial_Prefix))

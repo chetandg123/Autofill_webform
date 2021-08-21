@@ -82,9 +82,9 @@ class functions():
                     time.sleep(2)
                     self.driver.find_element_by_xpath('/html/body/table/tbody/tr[2]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/ul[14]/a').click()
                 while self.driver.current_url == 'https://aqe-qa.cat.com/aqe/saveFacilityCode.do?facilityCode=WK':
-                    time.sleep(1)
-                    self.driver.find_element_by_link_text('New Event').click()
                     time.sleep(2)
+                    self.driver.find_element_by_link_text('New Event').click()
+                    time.sleep(3)
 
 
 

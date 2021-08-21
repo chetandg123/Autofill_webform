@@ -70,20 +70,23 @@ class web_form_auto_fillup():
 
             if self.driver.current_url == 'https://aqe-qa.cat.com/aqe/processEvent.do':
                 self.Product_Family.select_by_visible_text(Product_Family[i])
+                time.sleep(2)
                 self.new_found.select_by_visible_text(new_found[i])
                 time.sleep(2)
 
             if self.driver.current_url == 'https://aqe-qa.cat.com/aqe/processEvent.do':
                 self.serial_pref.select_by_visible_text(Serial_Prefix[i])
+                time.sleep(1)
                 self.Serial_num.send_keys(Serial_Number[i])
-
                 self.part_number.send_keys(Part_Number[i])
+                time.sleep(2)
                 self.event_status.select_by_visible_text(Status[i])
                 self.id_area.select_by_visible_text(ID_Area[i])
                 time.sleep(2)
 
             if self.driver.current_url == 'https://aqe-qa.cat.com/aqe/processEvent.do':
                 self.Problem_desc.send_keys(Problem_Description[i])
+                time.sleep(5)
                 self.Problem_Symptom.send_keys(Problem_Symptom[i])
                 time.sleep(2)
 
