@@ -16,20 +16,14 @@ class Auto_form_filling(unittest.TestCase):
         self.reuse.get_webform_url()
 
     #Run any one test method for test trails
-    def test_fillup_webforms(self):
-        clas =web_form_auto_fillup(self.driver)
-        method = clas.webform_fields()
-        time.sleep(2)
+
 
     def test_generate_events(self):
         method = script_for_fillup_webpage(self.driver)
         res = method.webpage_contents()
         time.sleep(3)
 
-    def test_trial_round_3(self):
-        method = demo_test1()
-        res = method.webpage_contents()
-        time.sleep(3)
+
 
     @classmethod
     def tearDownClass(cls):

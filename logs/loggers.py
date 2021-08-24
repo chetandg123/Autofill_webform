@@ -8,7 +8,9 @@ class log_Details():
     @staticmethod
     def logen():
         dir = functions()
-        logging.basicConfig(filename=dir.get_log_file_dir()+'/status.log',format='%(asctime)s : %(levelname)s : %(message)s',datefmt='%m-%d-%Y %I:%M:%S%p')
+        file_path=dir.get_log_file_dir()+'/status.log'
+        logging.basicConfig(filename=file_path,format='%(asctime)s : %(levelname)s : %(message)s',datefmt='%m-%d-%Y %I:%M:%S%p')
+        logging.FileHandler(file_path,'w')
         logger = logging.getLogger()
         logger.setLevel(logging.INFO)
         return logger

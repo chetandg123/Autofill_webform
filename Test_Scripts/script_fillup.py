@@ -129,8 +129,10 @@ class script_for_fillup_webpage():
                 # #Enter Stop time
                 ele = self.driver.find_element_by_id(self.locator.Stop_Time)
                 ele.send_keys(int(Stop_time[i]))
+                time.sleep(2)
 
-            event_id = self.driver.find_element_by_id(self.locator.Event_Number).get_attribute("value")
+            event_id = self.driver.find_element_by_name(self.locator.Event_Number).get_attribute("value")
+
             output = [event_id, quality[i], problem_origin[i], event_type[i], Product_Family[i], new_found[i],
                       Serial_Prefix[i], Serial_Number[i], Part_Number[i], ID_Area[i], Cause_Area[i], PD_Name[i],
                       Problem_Description[i], Problem_Symptom[i], Status[i], Priority[i], Stop_time[i]]
@@ -157,8 +159,8 @@ class script_for_fillup_webpage():
             self.logger.info(str(count)+str(event_id)+"********* Event is Created****************")
 
             #logic to clear input csv file once operation is completes
-            # print("Deletion of records in existing input csv file")
-            # f = open(form_data, "r+")
-            # f.truncate(228)
-            # print('**********File is cleared***********')
-            # f.close()
+            print("Deletion of records in existing input csv file")
+            f = open(form_data, "r+")
+            f.truncate(228)
+            print('**********File is cleared***********')
+            f.close()
